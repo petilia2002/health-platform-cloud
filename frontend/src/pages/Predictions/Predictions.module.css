@@ -1,0 +1,61 @@
+.predictions {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  padding: 35px 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.predLoader,
+.predEmpty {
+  flex: 1;
+}
+
+.header {
+  width: 95%;
+  align-self: center;
+}
+
+.header h3 {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.btnContainer {
+  display: flex;
+  column-gap: 25px;
+  margin-bottom: 30px;
+}
+
+.backButton {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  color: white;
+  background: #3f8cf4;
+  font-weight: 600;
+  padding: 12px 18px;
+  white-space: nowrap;
+}
+
+.tests_list {
+  width: 95%;
+  row-gap: 35px;
+  align-self: center;
+}
+
+.formSearch {
+  width: 300px;
+  height: 40px;
+}
+
+@media (max-width: 780px) {
+  .btnContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}

@@ -1,0 +1,52 @@
+.myTable {
+  width: 100%;
+  color: #3f8cf4;
+  overflow-x: auto;
+  scrollbar-color: #d1d5df transparent;
+  scrollbar-width: thin;
+}
+
+.myTable:focus-visible {
+  outline: 2px solid #3f8cf4;
+  box-shadow: 0 0 0 5px rgba(179, 212, 252, 0.6);
+}
+
+.tableContent {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: max-content;
+  table-layout: auto;
+}
+
+.headerRow {
+  border-bottom: 1px solid rgba(163, 180, 189, 0.4);
+}
+
+.tableHeaderCell {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 20px;
+  white-space: nowrap;
+}
+
+.tableRow {
+  background: #fff;
+  border-bottom: 1px solid rgba(163, 180, 189, 0.4);
+}
+
+.tableRow:hover {
+  background: #f5f9ff;
+}
+
+.tableCell {
+  padding: 15px 20px;
+}
+
+.tableCell span {
+  font-size: 17px;
+  font-weight: 500;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

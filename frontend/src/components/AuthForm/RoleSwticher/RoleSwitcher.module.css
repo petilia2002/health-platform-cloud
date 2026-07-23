@@ -1,0 +1,12 @@
+.role_switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #3f8cf4;
+  outline: none;
+}
+
+.role_switcher:focus {
+  border: 2px solid #397ee2;
+  box-shadow: 0 0 0 3px rgba(29, 161, 242, 0.3);
+}

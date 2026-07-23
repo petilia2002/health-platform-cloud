@@ -1,0 +1,118 @@
+.requestCard {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+  padding: 15px 30px 30px 30px;
+}
+
+.dateSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.dateSection p {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.mainContent {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.mainContent img {
+  width: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cardInfo h5 {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.cardInfo h5:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cardInfo p {
+  color: #f2813f;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btnSection {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btnFilled {
+  font-family: "Montserrat", sans-serif;
+  background: #3f8cf4;
+  width: 187px;
+  height: 43px;
+}
+
+.btnFilled:active,
+.btnFilled:focus {
+  box-shadow: none;
+  background: #3f8cf4;
+}
+
+.btnFilled:hover {
+  transform: translateY(0px);
+  background: #397ee2;
+}
+
+.btnOutline {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  color: #3f8cf4;
+  border: 2px solid #3f8cf4;
+  width: 187px;
+  height: 43px;
+}
+
+.btnOutline:active,
+.btnOutline:focus {
+  box-shadow: none;
+  background: #fff;
+}
+
+.btnOutline:hover {
+  background: #f5f9ff;
+  color: #3370d0;
+  transform: translateY(0px);
+}
+
+.btnOutline:disabled {
+  background: #fff;
+  color: #3370d0;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  opacity: 0.8;
+}
+
+@media (max-width: 750px) {
+  .mainContent {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  .btnSection {
+    margin-top: 20px;
+  }
+
+  .cardInfo h5 {
+    text-align: center;
+  }
+
+  .cardInfo p {
+    text-align: center;
+  }
+}

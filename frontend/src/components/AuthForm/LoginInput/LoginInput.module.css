@@ -1,0 +1,21 @@
+.loginInput {
+  width: 100%;
+  padding: 5px 10px;
+  border: 2px solid #3f8cf4;
+  border-radius: 5px;
+  outline: none;
+  color: #333;
+  transition: border-color 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.loginInput:focus {
+  border-color: #397ee2;
+  box-shadow: 0 0 0 3px rgba(29, 161, 242, 0.3);
+}
+
+.loginInput::placeholder {
+  font-weight: 400;
+  color: #999;
+}

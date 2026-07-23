@@ -1,0 +1,14 @@
+---
+meta:
+  environment: python
+  toolchain:
+    name: pip
+    version: 3.13
+build:
+  requirementsPath: requirements.txt
+  useCache: true
+run:
+  persistenceMount: /data
+  scriptName: run.py
+  containerPort: 8000
+  servicePort: 80

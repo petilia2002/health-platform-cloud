@@ -1,0 +1,13 @@
+.tableHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tableCell {
+  padding: 15px 20px;
+}
+
+.patology {
+  color: #ff4d4f;
+}

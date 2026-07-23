@@ -1,0 +1,49 @@
+.notfound {
+  font-family: "Montserrat", sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notfound img {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.notfound h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.telContainer {
+  margin-top: 32px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.telContainer p {
+  color: #5c7d88;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.telContainer a {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.notfoundBtn {
+  font-family: "Montserrat", sans-serif;
+  white-space: nowrap;
+}
+
+.notfoundBtn:hover {
+  transform: translateY(0);
+}

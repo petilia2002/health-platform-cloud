@@ -1,0 +1,180 @@
+.requestCard {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+  padding: 15px 30px 30px 30px;
+}
+
+.dateSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.dateSection p {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.mainContent {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.mainContent img {
+  width: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 5px;
+}
+
+.cardInfo h5 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cardInfo h5:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cardInfo p {
+  color: #f2813f;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.patientStatus {
+  display: flex;
+  align-items: center;
+  row-gap: 5px;
+  column-gap: 15px;
+  flex-wrap: wrap;
+}
+
+.age {
+  display: inline;
+  color: #3f8cf4;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 5px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.age:hover {
+  background: #fafafa;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.locationIcon {
+  color: #3f8cf4;
+}
+
+.btnSection {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  margin-top: auto;
+}
+
+.btnPair {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  column-gap: 15px;
+}
+
+.btnFilled {
+  font-family: "Montserrat", sans-serif;
+  background: #3f8cf4;
+}
+
+.btnFilled:active,
+.btnFilled:focus {
+  box-shadow: none;
+  background: #3f8cf4;
+}
+
+.btnFilled:hover {
+  transform: translateY(0px);
+  background: #397ee2;
+}
+
+.btnOutline {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  color: #3f8cf4;
+  border: 2px solid #3f8cf4;
+}
+
+.btnOutline:active,
+.btnOutline:focus {
+  box-shadow: none;
+  background: #fff;
+}
+
+.btnOutline:hover {
+  background: #f5f9ff;
+  color: #3370d0;
+  transform: translateY(0px);
+}
+
+.btnOutline:disabled {
+  background: #fff;
+  color: #3370d0;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  opacity: 0.8;
+}
+
+@media (max-width: 750px) {
+  .mainContent {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  .btnSection {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .ageSection,
+  .patientStatus {
+    justify-content: center;
+  }
+
+  .cardInfo h5,
+  .cardInfo p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .btnPair {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+}

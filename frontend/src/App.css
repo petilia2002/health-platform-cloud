@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Основные цвета */
+  --primary: #3f8cf4;
+  --primary-dark: #1f6ad5;
+  --primary-light: #b8daff;
+  --secondary: #ff7e5f;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --white: #ffffff;
+  --gray: #6c757d;
+  --gray-light: #e9ecef;
+
+  /* Голубая палитра (дополнительно) */
+  --primary-blue: #3f8cf4; /* Исходный цвет */
+
+  /* Темные оттенки */
+  --primary-blue-dark-1: #397ee2; /* -10% темнее */
+  --primary-blue-dark-2: #3370d0; /* -20% темнее */
+  --primary-blue-dark-3: #2d62be; /* -30% темнее */
+  --primary-blue-dark-4: #2754ac; /* -40% темнее */
+  --primary-blue-dark-5: #21469a; /* -50% темнее */
+  --primary-blue-dark-6: #1b3888; /* -60% темнее */
+  --primary-blue-dark-7: #152a76; /* -70% темнее */
+  --primary-blue-dark-8: #0f1c64; /* -80% темнее */
+  --primary-blue-dark-9: #090e52; /* -90% темнее */
+
+  /* Светлые оттенки */
+  --primary-blue-light-1: #5c9ef6; /* +10% светлее */
+  --primary-blue-light-2: #79b0f8; /* +20% светлее */
+  --primary-blue-light-3: #96c2fa; /* +30% светлее */
+  --primary-blue-light-4: #b3d4fc; /* +40% светлее */
+  --primary-blue-light-5: #d0e6fd; /* +50% светлее */
+  --primary-blue-light-6: #e8f3fe; /* +60% светлее */
+  --primary-blue-light-7: #f5f9ff; /* +70% светлее */
+
+  /* Красная палитра (дополнительно) */
+  --primary-red: #e63946; /* Исходный цвет */
+
+  /* Темные оттенки */
+  --primary-red-dark-1: #cf3340; /* -10% темнее */
+  --primary-red-dark-2: #b82d3a; /* -20% темнее */
+  --primary-red-dark-3: #a12734; /* -30% темнее */
+  --primary-red-dark-4: #8a212e; /* -40% темнее */
+  --primary-red-dark-5: #731b28; /* -50% темнее */
+  --primary-red-dark-6: #5c1522; /* -60% темнее */
+  --primary-red-dark-7: #450f1c; /* -70% темнее */
+  --primary-red-dark-8: #2e0916; /* -80% темнее */
+  --primary-red-dark-9: #170310; /* -90% темнее */
+
+  /* Светлые оттенки */
+  --primary-red-light-1: #e94d59; /* +10% светлее */
+  --primary-red-light-2: #eb616c; /* +20% светлее */
+  --primary-red-light-3: #ee747f; /* +30% светлее */
+  --primary-red-light-4: #f18892; /* +40% светлее */
+  --primary-red-light-5: #f49ca5; /* +50% светлее */
+  --primary-red-light-6: #f7b0b8; /* +60% светлее */
+  --primary-red-light-7: #f9c4cb; /* +70% светлее */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-color: #c2c3c5 #fff;
+  scrollbar-width: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+.ant-btn:focus.ant-btn-dangerous {
+  outline: 6px solid rgba(255, 77, 79, 0.15);
+  outline-offset: 1px;
+  transition: outline-offset 0s, outline 0s;
+}

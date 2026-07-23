@@ -1,0 +1,25 @@
+.notfoundSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+
+.notfoundDescription {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.notfoundAction {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 20px;
+}
+
+.notfoundBtn {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+}

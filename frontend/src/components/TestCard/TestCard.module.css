@@ -1,0 +1,156 @@
+.testCard {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(63, 140, 244, 0.35) 0px 5px 15px;
+  padding: 25px 40px 40px 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.about_container {
+  display: flex;
+  column-gap: 5px;
+  width: 565px;
+}
+
+.test_about {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_title {
+  font-size: 21px;
+  margin: 0px;
+}
+
+.card_info {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.card_info .card_dot {
+  font-size: 12px;
+  font-weight: 900;
+  user-select: none;
+}
+
+.tags_container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.card_tag {
+  border: 2px solid #d0e6fd;
+  border-radius: 30px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e8f3fe;
+  color: var(--primary-dark);
+  cursor: pointer;
+}
+
+.oak_tag {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tag_blue {
+  background: #e8f3fe;
+  border: 2px solid #d0e6fd;
+  color: #1f6ad5;
+}
+
+.tag_green {
+  background: #e8f7ed;
+  border: 2px solid #d0f0dc;
+  color: #1d9d5f;
+}
+
+.tag_yellow {
+  background: #fef8e8;
+  border: 2px solid #fdf0d0;
+  color: #d5a71f;
+}
+
+.tag_orange {
+  background: #fef2e8;
+  border: 2px solid #fde5d0;
+  color: #d56d1f;
+}
+
+.tag_purple {
+  background: #f2e8fe;
+  border: 2px solid #e5d0fd;
+  color: #6a1fd5;
+}
+
+.btns_container {
+  align-self: flex-end;
+  display: flex;
+  column-gap: 25px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.testBtn {
+  font-family: "Montserrat", sans-serif;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.btns_container .deleteBtn {
+  width: auto;
+}
+
+.imgContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_img {
+  width: 120px;
+}
+
+@media (max-width: 988px) {
+  .card_info {
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: flex-start;
+  }
+
+  .card_info .card_dot {
+    display: none;
+  }
+}

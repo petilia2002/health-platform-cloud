@@ -1,0 +1,152 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.sectionTitle:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--primary);
+  margin: 1rem auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btnPrimary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btnPrimary:hover {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btnOutline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 3px solid var(--primary);
+}
+
+.btnOutline:hover {
+  transform: translateY(-2px);
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.pricingCard {
+  background-color: var(--white);
+  color: var(--dark);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  transition: all 0.5s ease;
+}
+
+.pricingCard:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(17, 17, 26, 0.2) 0px 0px 24px;
+}
+
+.pricingHeader {
+  background-color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+.pricingHeader h3 {
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.priceBtn {
+  align-self: center;
+}
+
+.price span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.pricingBody {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricingFeatures {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.pricingFeatures li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.pricingFeatures li:last-child {
+  border-bottom: none;
+}
+
+.pricingFeatures li svg {
+  color: var(--success);
+  margin-right: 0.5rem;
+  transform: scale(1.1);
+}
+
+.pricingFeatures li .close {
+  color: red;
+}
+
+.selectedCard {
+  background: var(--primary);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+}

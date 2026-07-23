@@ -1,0 +1,164 @@
+.comment {
+  font-family: "Montserrat", sans-serif;
+}
+
+.titleSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 18px;
+}
+
+.titleBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #3f8cf4;
+  cursor: pointer;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out;
+}
+
+.titleBtn:hover {
+  background: #f5f9ff;
+}
+
+.commentTitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.commentCount {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.arrowDown {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrowDown.active {
+  transform: rotate(180deg);
+}
+
+.commentCard {
+  padding: 30px 30px 20px 30px;
+  border-radius: 10px;
+  background: #f5f9ff;
+}
+
+.commentHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.commentHeader img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.doctorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.doctorInfo h5 {
+  margin-bottom: 0px;
+}
+
+.doctorInfo p {
+  color: #f2813f;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.commentContent {
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.commentText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: pre-line;
+  line-height: 1.7;
+  color: black;
+  margin: 0;
+  position: relative;
+}
+
+.collapsed {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  overflow: visible;
+}
+
+.toggleBtn {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  color: #3f8cf4;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.toggleBtn:focus-visible {
+  box-shadow: 0 0 0 3px rgba(63, 140, 244, 0.16), 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+.collapsed::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3.2em;
+  background: linear-gradient(
+    180deg,
+    rgba(245, 249, 255, 0) 0%,
+    rgba(245, 249, 255, 1) 85%
+  );
+  pointer-events: none;
+}
+
+.commentFooter p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.emptyBtn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 18px 15px;
+}
+
+.emptyMark {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  display: inline;
+  background: #e8f3fe;
+  padding: 8px 12px;
+  color: #3f8cf4;
+  border-radius: 5px;
+}

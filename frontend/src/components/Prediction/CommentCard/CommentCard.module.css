@@ -1,0 +1,121 @@
+.commentCard {
+  padding: 30px 30px 20px 30px;
+  border-radius: 10px;
+  background: #f5f9ff;
+  position: relative;
+}
+
+.iconSection {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  column-gap: 10px;
+}
+
+.editIcon {
+  color: #79b0f8;
+  transition: all 0.1s ease;
+}
+
+.editIcon:hover {
+  color: #3f8cf4;
+  cursor: pointer;
+}
+
+.commentHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.commentHeader img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.doctorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.doctorInfo h5 {
+  margin-bottom: 0px;
+}
+
+.doctorInfo p {
+  color: #f2813f;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.commentContent {
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.commentText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: pre-line;
+  line-height: 1.7;
+  color: black;
+  margin: 0;
+  position: relative;
+}
+
+.collapsed {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  overflow: visible;
+}
+
+.toggleBtn {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  color: #3f8cf4;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.toggleBtn:focus-visible {
+  box-shadow: 0 0 0 3px rgba(63, 140, 244, 0.16), 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+.collapsed::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3.2em;
+  background: linear-gradient(
+    180deg,
+    rgba(245, 249, 255, 0) 0%,
+    rgba(245, 249, 255, 1) 85%
+  );
+  pointer-events: none;
+}
+
+.commentFooter p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,73 @@
+.formModal {
+  padding: 30px 40px 15px 40px;
+  background: #fff;
+}
+
+.formTitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  min-width: 350px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.searchLabel {
+  font-weight: 500;
+  font-size: 17px;
+  color: #3f8cf4;
+}
+
+.submitButton {
+  font-family: "Montserrat", sans-serif;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3f8cf4 0%, #2d6cd9 100%);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(63, 140, 244, 0.3);
+  align-self: flex-end;
+}
+
+.submitButton:hover {
+  background: linear-gradient(135deg, #2d6cd9 0%, #1e54b7 100%);
+  box-shadow: 0 6px 20px rgba(63, 140, 244, 0.4);
+  transform: translateY(-1px);
+}
+
+.submitButton:focus {
+  background: linear-gradient(135deg, #2d6cd9 0%, #1e54b7 100%);
+  transform: translateY(-1px);
+}
+
+.submitButton:active {
+  background: linear-gradient(135deg, #2d6cd9 0%, #1e54b7 100%);
+  transform: translateY(-1px);
+}
+
+.formError {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #ff4d4f;
+  height: 18px;
+  opacity: 0;
+}
+
+.formError.active {
+  opacity: 1;
+}

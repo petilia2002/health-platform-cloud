@@ -1,0 +1,11 @@
+.emptyBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emptyText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}

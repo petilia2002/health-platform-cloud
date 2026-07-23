@@ -1,0 +1,23 @@
+.roleBtn {
+  padding: 5px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.5s ease;
+  color: #3f8cf4;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.roleBtn.active {
+  background: #3f8cf4;
+  color: #fff;
+}
+
+.roleBtn:hover:not(.active) {
+  background: #e8f4fc;
+}

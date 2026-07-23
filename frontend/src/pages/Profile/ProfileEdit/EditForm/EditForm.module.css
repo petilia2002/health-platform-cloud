@@ -1,0 +1,63 @@
+.profileEdit {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 30px;
+}
+
+.editForm {
+  width: 90%;
+  max-width: 1200px;
+  min-width: 250px;
+}
+
+.formGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 70px;
+}
+
+.halfWidth {
+  grid-column: span 1;
+}
+
+.fullWidth {
+  grid-column: span 2;
+}
+
+.formButtons {
+  display: flex;
+  gap: 15px 25px;
+  flex-wrap: wrap;
+}
+
+.buttonItem {
+  margin: 0;
+}
+
+.saveBtn {
+  width: 130px;
+  padding: 20px 20px;
+  font-size: 17px;
+}
+
+@media (max-width: 1000px) {
+  .formGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .fullWidth {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 780px) {
+  .formButtons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,37 @@
+.login {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.login_text {
+  display: inline-block;
+  will-change: transform;
+  transform: translateZ(0);
+  color: var(--primary);
+  font-weight: 500;
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+
+.login:hover {
+  column-gap: 5px;
+}
+
+.login_icon {
+  color: var(--primary);
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+
+.login:hover .login_text {
+  color: var(--primary-dark);
+  transform: scale(1.1);
+}
+
+.login:hover .login_icon {
+  color: var(--primary-dark);
+  transform: scale(1.1) translateX(4px);
+}

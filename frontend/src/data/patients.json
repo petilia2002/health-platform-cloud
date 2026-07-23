@@ -1,0 +1,56 @@
+[
+  {
+    "email": "petilia2002@yandex.ru",
+    "password": "1234",
+    "last_name": "Петренков",
+    "first_name": "Илья",
+    "middle_name": "Алексеевич",
+    "gender": "Мужчина",
+    "birth_date": "2002-04-27",
+    "role": "Пациент"
+  },
+
+  {
+    "email": "a.loskutov97@mail.ru",
+    "password": "1234",
+    "last_name": "Лоскутов",
+    "first_name": "Антон",
+    "middle_name": "Алексеевич",
+    "gender": "Мужчина",
+    "birth_date": "1997-01-14",
+    "role": "Пациент"
+  },
+
+  {
+    "email": "anna.mayuk@inbox.ru",
+    "password": "1234",
+    "last_name": "Маюк",
+    "first_name": "Анна",
+    "middle_name": "Александровна",
+    "gender": "Женщина",
+    "birth_date": "2000-03-07",
+    "role": "Пациент"
+  },
+
+  {
+    "email": "dasha.proskuryakova@gmail.com",
+    "password": "1234",
+    "last_name": "Пронина",
+    "first_name": "Дарья",
+    "middle_name": "Александровна",
+    "gender": "Женщина",
+    "birth_date": "2003-07-12",
+    "role": "Пациент"
+  },
+
+  {
+    "email": "siga-svetlana@yandex.ru",
+    "password": "1234",
+    "last_name": "Сигалова",
+    "first_name": "Светлана",
+    "middle_name": "Владимировна",
+    "gender": "Женщина",
+    "birth_date": "1981-05-19",
+    "role": "Пациент"
+  }
+]

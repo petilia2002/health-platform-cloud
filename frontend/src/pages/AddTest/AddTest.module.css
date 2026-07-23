@@ -1,0 +1,202 @@
+.container {
+  min-height: 100vh;
+  background: #fff;
+  padding: 24px;
+}
+
+.backButton {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  color: white;
+  background: #3f8cf4;
+  font-weight: 600;
+  margin-bottom: 16px;
+  padding: 10px 15px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  border: 2px solid #e6f7ff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  color: #3f8cf4 !important;
+  margin-bottom: 8px !important;
+  font-weight: 600;
+}
+
+.form {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 20px;
+}
+
+.formField {
+  width: 100%;
+  min-width: 0;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.sectionTitle {
+  color: #2d6cd9 !important;
+}
+
+.toggleButton {
+  color: #3f8cf4;
+  border-color: #3f8cf4;
+  font-weight: 500;
+}
+
+.toggleButton:hover {
+  color: #2d6cd9;
+  border-color: #2d6cd9;
+}
+
+.input {
+  border-radius: 8px;
+  border: 2px solid #e6f7ff;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: #3f8cf4;
+  box-shadow: 0 0 0 2px rgba(63, 140, 244, 0.2);
+}
+
+.input:hover {
+  border-color: #96c2fa;
+  box-shadow: 0 0 0 2px rgba(63, 140, 244, 0.2);
+}
+
+.input :global(.ant-input-suffix) {
+  color: #6c8fdf;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.cancelButton {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 8px;
+  border: 2px solid #3f8cf4;
+  color: #3f8cf4;
+  background: transparent;
+  font-weight: 600;
+  height: 48px;
+  padding: 0 32px;
+}
+
+.cancelButton:hover {
+  border-color: #2d6cd9;
+  color: #2d6cd9;
+  background: transparent;
+  box-shadow: 0 3px 10px rgba(63, 140, 244, 0.4);
+  transform: translateY(-1px);
+}
+
+.cancelButton:focus {
+  color: #2d6cd9;
+  background: transparent;
+}
+
+.cancelButton:active {
+  color: #2d6cd9;
+  background: transparent;
+}
+
+.submitButton {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  background: linear-gradient(135deg, #3f8cf4 0%, #2d6cd9 100%);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  height: 48px;
+  padding: 0 32px;
+  box-shadow: 0 4px 16px rgba(63, 140, 244, 0.3);
+}
+
+.submitButton:hover {
+  background: linear-gradient(135deg, #2d6cd9 0%, #1e54b7 100%);
+  box-shadow: 0 6px 20px rgba(63, 140, 244, 0.4);
+  transform: translateY(-1px);
+}
+
+.submitButton:focus {
+  background: linear-gradient(135deg, #2d6cd9 0%, #1e54b7 100%);
+  transform: translateY(-1px);
+}
+
+.submitButton:active {
+  background: linear-gradient(135deg, #2d6cd9 0%, #1e54b7 100%);
+  transform: translateY(-1px);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cancelButton,
+  .submitButton {
+    width: 100%;
+  }
+}
+
+/* Стили для Ant Design компонентов */
+:global(.ant-form-item-label > label) {
+  color: #3f8cf4 !important;
+  font-weight: 600;
+}
+
+:global(.ant-divider) {
+  border-color: #e6f7ff;
+}
+
+:global(.ant-card) {
+  border-radius: 16px;
+}

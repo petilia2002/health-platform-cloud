@@ -1,0 +1,9 @@
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myLoader.myLoader {
+  font-size: 54px;
+}

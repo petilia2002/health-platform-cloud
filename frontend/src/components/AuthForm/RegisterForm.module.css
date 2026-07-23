@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+.registerForm {
+  width: 100%;
+  max-width: 1100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  background: #fff;
+  padding: 20px 40px 30px 40px;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 25px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px 50px;
+}
+
+.formField {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput {
+  margin-top: 10px;
+}
+
+.formInput::placeholder {
+  color: #8c8c8c;
+  opacity: 1;
+}
+
+.formSelect {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.passwordInput {
+  font-weight: 900;
+}
+
+.errorContainer {
+  width: 100%;
+  min-height: 24px;
+}
+
+.errorMsg {
+  color: red;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 5px 0px 0px 0px;
+  padding: 0;
+  display: inline-block;
+}
+
+.span_2 {
+  grid-column: span 2;
+}
+
+.span_3 {
+  grid-column: span 3;
+}
+
+@media (max-width: 800px) {
+  .formGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .span_2 {
+    grid-column: span 1;
+  }
+
+  .span_3 {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .span_2 {
+    grid-column: span 1;
+  }
+
+  .span_3 {
+    grid-column: span 1;
+  }
+}
+
+.politics {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  width: auto;
+  align-self: center;
+  margin: 20px 0px 10px 0px;
+}
+
+.checkContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.checkGroup {
+  background: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.registerLabel {
+  width: auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.registerCheckbox {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.registerCheckbox:checked {
+  background-size: 20px;
+}
+
+.formTitle {
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.linkGroup {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 5px;
+  width: 100%;
+}
+
+.registerText {
+  margin: 0;
+}
+
+.registerLink {
+  text-decoration: none;
+  outline: none;
+  color: #3f8cf4;
+  cursor: pointer;
+}
+
+.registerLink:hover {
+  color: #397ee2;
+}
+
+.registerLink:active {
+  color: #2d62be;
+}
+
+.registerSwitch {
+  width: 50%;
+  min-width: 175px;
+  align-self: center;
+}
+
+.serverErrorCont {
+  width: 100%;
+  min-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.btnContainer {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.serverError {
+  color: red;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 5px 0px 0px 0px;
+  padding: 0;
+}
+
+@media (max-width: 418px) {
+  .linkGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2px;
+  }
+}

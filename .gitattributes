@@ -1,0 +1,34 @@
+# Явно указываем языки
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+*.py linguist-language=Python
+*.css linguist-language=CSS
+*.html linguist-language=HTML
+*.htm linguist-language=HTML
+
+# SQL-скрипты
+*.sql linguist-language=SQL
+*.sql linguist-detectable=true
+
+# Изображения и иконки
+*.png linguist-vendored
+*.jpg linguist-vendored
+*.jpeg linguist-vendored
+*.svg linguist-vendored
+*.ico linguist-vendored
+
+# Исключаем лишнее из статистики
+*.md linguist-documentation
+*.json linguist-vendored
+*.yaml linguist-vendored
+*.h5 linguist-vendored
+*.pkl linguist-vendored
+*.npy linguist-vendored
+*.lock linguist-generated
+*.txt linguist-documentation
+*.gitignore linguist-documentation
+
+# Отключаем анализ для конфигов
+.editorconfig linguist-vendored
+.eslintrc linguist-vendored
+.prettierrc linguist-vendored

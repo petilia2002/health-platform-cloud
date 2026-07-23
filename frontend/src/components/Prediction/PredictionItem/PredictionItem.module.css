@@ -1,0 +1,269 @@
+.predictionItem {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: rgba(63, 140, 244, 0.2) 0px 4px 16px,
+    rgba(63, 140, 244, 0.1) 0px 8px 32px;
+  padding: 30px 20px 20px 30px;
+}
+
+.mainContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 50px;
+  flex-wrap: nowrap;
+  row-gap: 20px;
+}
+
+.imgContainer {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  justify-items: center;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  row-gap: 15px;
+}
+
+.imgContainer img {
+  width: 70px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.imgContainer img:hover {
+  transform: scale(1.1);
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.header {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 5px;
+}
+
+.header p {
+  color: #3f8cf4;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.redCircle {
+  background: #ff4d4f;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.tagContainer {
+  display: flex;
+  column-gap: 25px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+
+.tag {
+  color: #3f8cf4;
+  border: 2px solid #3f8cf4;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  white-space: nowrap;
+}
+
+.tag:hover {
+  color: #1f6ad5;
+  border-color: #1f6ad5;
+}
+
+.details {
+  margin-right: 50px;
+  overflow: hidden;
+}
+
+.detailsTable {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.recom {
+  background: #fff3e0;
+  border-left: 5px solid #ff9800;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.recomText {
+  font-size: 16px;
+  color: #e65100;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.recom a {
+  font-size: 16px;
+  color: #e65100;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.recom a:hover {
+  color: #e65100;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 20px;
+}
+
+.btnGrid {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  column-gap: 25px;
+}
+
+.predictionBtn {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.cardFooter {
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
+  column-gap: 15px;
+  margin-top: 5px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 15px;
+  padding-left: 50px;
+}
+
+.myIcon {
+  color: #3f8cf4;
+  transform: scale(1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.myIcon:hover {
+  transform: scale(1.1);
+  color: #1f6ad5;
+}
+
+.refContainer {
+  background: transparent;
+  color: #3f8cf4;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.refContainer:hover {
+  background: rgba(63, 140, 244, 0.1);
+  color: #1f6ad5;
+}
+
+.sampleRef {
+  font-size: 16px;
+  color: #3f8cf4;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.refContainer:hover .sampleRef {
+  color: #1f6ad5;
+}
+
+.refIcon {
+  transform: rotate(180deg) translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.detailsIcon {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.detailsIcon.active {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1290px) {
+  .cardFooter {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .btnGrid {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+
+  .btnContainer {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+  }
+}
+
+@media (max-width: 878px) {
+  .cardFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 5px;
+  }
+
+  .iconContainer {
+    padding: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .imgContainer {
+    flex-wrap: wrap;
+  }
+}

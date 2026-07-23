@@ -1,0 +1,335 @@
+.sampleView {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  padding: 30px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sampleHeader {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sampleTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3f8cf4;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.backButton {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  color: white;
+  background: #3f8cf4;
+  font-weight: 600;
+  padding: 12px 20px;
+  white-space: nowrap;
+}
+
+.backButton:hover {
+  transform: translateY(0px);
+}
+
+.backIcon {
+  transform: rotate(180deg);
+}
+
+.toggleButton {
+  font-family: "Montserrat", sans-serif;
+  color: #3f8cf4;
+  background: white;
+  border: 2px dashed #3f8cf4;
+  font-weight: 500;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  white-space: nowrap;
+}
+
+.toggleButton:hover {
+  background: white;
+  color: #1f6ad5;
+  border-color: #1f6ad5;
+  transform: translateY(0px);
+  box-shadow: none;
+}
+
+.toggleButton:active {
+  background: white;
+  color: #1f6ad5;
+  border-color: #1f6ad5;
+  box-shadow: 0 0 0 2px rgba(63, 140, 244, 0.3);
+}
+
+.toggleButton:focus {
+  background: white;
+  color: #1f6ad5;
+  border-color: #1f6ad5;
+  box-shadow: 0 0 0 2px rgba(63, 140, 244, 0.3);
+}
+
+.errorContainer {
+  flex: 1;
+}
+
+.loaderContainer {
+  height: 100%;
+}
+
+.tableFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.sampleTable {
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.sampleTable ul {
+  margin-top: 30px !important;
+}
+
+.sampleTable a {
+  color: #3f8cf4 !important;
+}
+
+.metricName {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.redCircle {
+  width: 10px;
+  height: 10px;
+  background: #ff4d4f;
+  border-radius: 50%;
+}
+
+.deleteContainer {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #79b0f8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.deleteContainer:hover {
+  color: #3f8cf4;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 1320px) {
+  .sampleHeader {
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 797px) {
+  .btnContainer {
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+  }
+}
+
+.editingContainer {
+  position: relative;
+  height: 25px;
+}
+
+.valueContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 25px;
+}
+
+.valueContainer .deleteContainer {
+  color: #3f8cf4;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.valueContainer:hover .deleteContainer {
+  opacity: 1;
+}
+
+/* Стили для кнопок редактирования */
+.valueContainer :global(.ant-btn) {
+  color: #3f8cf4;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.valueContainer:hover :global(.ant-btn) {
+  opacity: 1;
+}
+
+/* Стили для Input */
+.editingContainer :global(.ant-input) {
+  border-color: #3f8cf4;
+  height: 25px;
+  line-height: 25px;
+}
+
+.editingContainer :global(.ant-input:focus) {
+  border-color: #2d6cd9;
+  box-shadow: 0 0 0 2px rgba(63, 140, 244, 0.2);
+}
+
+.editingContainer :global(.ant-input-status-error) {
+  border-color: #ff4d4f;
+}
+
+.input {
+  border-radius: 8px;
+  border: 2px solid #e6f7ff !important;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: #3f8cf4 !important;
+  box-shadow: 0 0 0 2px rgba(63, 140, 244, 0.2) !important;
+}
+
+.input:focus-visible {
+  border-color: #3f8cf4 !important;
+  box-shadow: 0 0 0 2px rgba(63, 140, 244, 0.2) !important;
+}
+
+.input:hover {
+  border-color: #96c2fa !important;
+  box-shadow: 0 0 0 2px rgba(63, 140, 244, 0.2) !important;
+}
+
+.input :global(.ant-input-suffix) {
+  color: #6c8fdf !important;
+  font-weight: 500;
+}
+
+.myModal {
+  background: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 320px;
+  background: #fff;
+}
+
+.actionBtns {
+  margin-top: 10px;
+  display: flex;
+  column-gap: 15px;
+  align-self: center;
+}
+
+.cancelButton {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 8px;
+  border: 2px solid #3f8cf4;
+  color: #3f8cf4;
+  background: transparent;
+  font-weight: 600;
+  padding: 8px 12px;
+  width: 113px;
+}
+
+.cancelButton:hover {
+  border-color: #2d6cd9;
+  color: #2d6cd9;
+  background: transparent;
+  box-shadow: 0 3px 10px rgba(63, 140, 244, 0.4);
+  transform: translateY(-1px);
+}
+
+.cancelButton:focus {
+  color: #2d6cd9;
+  background: transparent;
+}
+
+.cancelButton:active {
+  color: #2d6cd9;
+  background: transparent;
+}
+
+.submitButton {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3f8cf4 0%, #2d6cd9 100%);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  width: 113px;
+  box-shadow: 0 4px 16px rgba(63, 140, 244, 0.3);
+}
+
+.submitButton:hover {
+  background: linear-gradient(135deg, #2d6cd9 0%, #1e54b7 100%);
+  box-shadow: 0 6px 20px rgba(63, 140, 244, 0.4);
+  transform: translateY(-1px);
+}
+
+.submitButton:focus {
+  background: linear-gradient(135deg, #2d6cd9 0%, #1e54b7 100%);
+  transform: translateY(-1px);
+}
+
+.submitButton:active {
+  background: linear-gradient(135deg, #2d6cd9 0%, #1e54b7 100%);
+  transform: translateY(-1px);
+}
+
+.modalInput {
+  border-radius: 6px;
+  border: 2px solid #3f8cf4;
+  transition: all 0.3s ease;
+  height: 32px;
+}
+
+.modalInput:hover {
+  border-color: #397ee2;
+}
+
+.modalInput:active {
+  border-color: #397ee2;
+  box-shadow: 0 0 0 3px rgba(29, 161, 242, 0.3);
+}
+
+.modalInput:focus {
+  border-color: #3f8cf4;
+  box-shadow: 0 0 0 3px rgba(29, 161, 242, 0.3);
+}
+
+.modalInput :global(.ant-input-suffix) {
+  color: #3f8cf4;
+  font-weight: 500;
+}

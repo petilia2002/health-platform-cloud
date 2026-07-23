@@ -1,0 +1,203 @@
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/health.jpeg") no-repeat bottom;
+  background-size: cover;
+  height: calc(100vh - 87px);
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroContainer {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heroBtns {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.8rem;
+}
+
+.mainBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  width: 213px;
+  height: 68px;
+}
+
+.mainBtnPrimary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.mainBtnPrimary:hover {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mainBtnOutline {
+  background-color: transparent;
+  color: var(--white);
+  border: 3px solid var(--primary);
+}
+
+.mainBtnOutline:hover {
+  transform: translateY(-2px);
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.heroFeatures {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  margin-top: 3.5rem;
+  position: relative;
+  z-index: 10;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.heroItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: var(--white);
+  flex: 1 1 calc(33.3% - 2rem);
+  min-width: 250px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.heroItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.heroIcon {
+  font-size: 1.8rem;
+  color: var(--primary);
+  min-width: 40px;
+}
+
+.featureText {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .heroItem {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 3.5rem 0;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .heroBtns {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroFeatures {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+  }
+  .heroItem {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 576) {
+  .hero {
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .heroFeatures {
+    flex-direction: column;
+  }
+}

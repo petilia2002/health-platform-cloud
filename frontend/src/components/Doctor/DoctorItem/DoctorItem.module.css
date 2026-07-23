@@ -1,0 +1,175 @@
+.doctorCard {
+  background: #f5f9ff;
+  padding: 30px;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.doctorCard:hover {
+  background: #e8f3fe;
+}
+
+.doctorPost {
+  align-self: flex-start;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: #3f8cf4;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.cardHeader {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.doctorIcon {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.doctorMain h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.doctorMain p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f2813f;
+}
+
+.doctorAddress {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.doctorAddress p {
+  font-size: 14px;
+}
+
+.locationIcon {
+  color: #3f8cf4;
+}
+
+.doctorInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  column-gap: 10px;
+  row-gap: 20px;
+  flex: 1;
+}
+
+.infoGroup {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.infoGroup:last-of-type {
+  grid-column: 1 / -1;
+  font-size: 14px;
+}
+
+.infoGroup label {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.infoGroup p {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.infoGroup:last-of-type p {
+  font-size: 14px;
+}
+
+.cardFooter {
+  margin-top: 25px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.iconWrapper {
+  padding: 7px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.myIcon {
+  color: #3f8cf4;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.btnFilled {
+  font-family: "Montserrat", sans-serif;
+  background: #3f8cf4;
+  width: 187px;
+  height: 43px;
+}
+
+.btnFilled:active,
+.btnFilled:focus {
+  box-shadow: none;
+  background: #3f8cf4;
+}
+
+.btnFilled:hover {
+  transform: translateY(0px);
+  background: #397ee2;
+}
+
+.btnOutline {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  color: #3f8cf4;
+  border: 2px solid #3f8cf4;
+  width: 187px;
+  height: 43px;
+}
+
+.btnOutline:active,
+.btnOutline:focus {
+  box-shadow: none;
+  background: #fff;
+}
+
+.btnOutline:hover {
+  background: #f5f9ff;
+  color: #3370d0;
+  transform: translateY(0px);
+}
+
+.btnOutline:disabled {
+  background: #fff;
+  color: #3370d0;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  opacity: 0.8;
+}

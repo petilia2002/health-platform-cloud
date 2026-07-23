@@ -1,0 +1,48 @@
+analytes = [
+    {"id": 34, "name": "gender", "loinc_code": "GENDER"},
+    {"id": 35, "name": "age", "loinc_code": "AGE"},
+    {"id": 19, "name": "hgb", "loinc_code": "30350-3"},
+    {"id": 21, "name": "mcv", "loinc_code": "71829-6"},
+    {"id": 20, "name": "rbc", "loinc_code": "789-8"},
+    {"id": 22, "name": "wbc", "loinc_code": "804-5"},
+    {"id": 23, "name": "plt", "loinc_code": "777-3"},
+    {"id": 26, "name": "eo", "loinc_code": "711-2"},
+    {"id": 27, "name": "baso", "loinc_code": "704-7"},
+    {"id": 28, "name": "mono", "loinc_code": "5905-5"},
+    {"id": 24, "name": "neut", "loinc_code": "768-2"},
+    {"id": 25, "name": "lymph", "loinc_code": "737-7"},
+    {"id": 36, "name": "mid", "loinc_code": "MID"},
+    {"id": 37, "name": "gra", "loinc_code": "GRA"},
+    {"id": 5, "name": "alt", "loinc_code": "1742-6"},
+    {"id": 18, "name": "alb", "loinc_code": "1751-7"},
+    {"id": 4, "name": "ast", "loinc_code": "1920-8"},
+    # {"id": 30, "name": "chol", "loinc_code": "14647-2"},
+    {"id": 9, "name": "crea", "loinc_code": "14682-9"},
+    {"id": 29, "name": "crp", "loinc_code": "1988-5"},
+    {"id": 6, "name": "bil_direct", "loinc_code": "29760-6"},
+    # {"id": 1, "name": "ferritin", "loinc_code": "20567-4"},
+    {"id": 3, "name": "folic", "loinc_code": "2284-8"},
+    # {"id": 31, "name": "glu", "loinc_code": "14771-0"},
+    {"id": 41, "name": "hba1c", "loinc_code": "HBA1C"},
+    {"id": 7, "name": "bil_indirect", "loinc_code": "14630-8"},
+    {"id": 12, "name": "ldg", "loinc_code": "2532-0"},
+    {"id": 8, "name": "bil_total", "loinc_code": "54363-7"},
+    {"id": 11, "name": "pro", "loinc_code": "13980-8"},
+    {"id": 10, "name": "urea", "loinc_code": "22664-7"},
+    # {"id": 32, "name": "uric", "loinc_code": "14933-6"},
+    {"id": 2, "name": "b12", "loinc_code": "2132-9"},
+]
+
+biomarkers = [
+    {"id": 30, "name": "chol", "loinc_code": "14647-2"},
+    {"id": 1, "name": "ferritin", "loinc_code": "20567-4"},
+    {"id": 31, "name": "glu", "loinc_code": "14771-0"},
+    {"id": 32, "name": "uric", "loinc_code": "14933-6"},
+]
+
+predict_features = [
+    "Prognosis of low ferritin level",
+    "Prognosis of high hba1c level",
+    "Prognosis of high ldl level",
+    "Prognosis of high uric acid level",
+]

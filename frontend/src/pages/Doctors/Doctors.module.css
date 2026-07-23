@@ -1,0 +1,61 @@
+.doctors {
+  height: 100%;
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctorsContainer {
+  width: 90%;
+  margin: 0px auto 20px auto;
+}
+
+.doctorsContainer h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.doctorSearch {
+  margin-top: 0px;
+}
+
+.foundResult {
+  color: #a1aeb2;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.doctorsGrid {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  align-items: stretch;
+  row-gap: 50px;
+  column-gap: 50px;
+}
+
+.footer {
+  width: 90%;
+  margin: 30px auto 0px auto;
+}
+
+.textFooter {
+  font-size: 16px;
+}
+
+.doctorsLoader {
+  flex: 1;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .doctorsGrid {
+    grid-template-columns: 1fr;
+  }
+}

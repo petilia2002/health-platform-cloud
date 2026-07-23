@@ -1,0 +1,81 @@
+.errorSection {
+  height: 100%;
+  display: flex;
+}
+
+.predictionInfo {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 40px 30px;
+}
+
+.loaderSection,
+.sectionError {
+  flex: 1;
+}
+
+.header {
+  color: #3f8cf4;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.redCircle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff4d4f;
+}
+
+.commentMark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8f3fe;
+  border-radius: 5px;
+}
+
+.infoTable {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.formSearch {
+  width: 350px;
+  height: 40px;
+}
+
+.btnSection {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+}
+
+.accessBtn {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 12px 15px;
+}
+
+.backIcon {
+  transform: rotate(180deg);
+}
+
+/* МЕДИА-ЗАПРОСЫ */
+
+@media (max-width: 1150px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 12px;
+  }
+}

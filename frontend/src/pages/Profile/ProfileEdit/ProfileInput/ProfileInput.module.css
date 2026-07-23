@@ -1,0 +1,19 @@
+.formInput {
+  font-size: 16px;
+  height: 50px;
+}
+
+.radioInput {
+  font-size: 16px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px 32px;
+}
+
+.selectInput {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  height: 50px;
+}

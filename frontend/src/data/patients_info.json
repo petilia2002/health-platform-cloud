@@ -1,0 +1,46 @@
+[
+  {
+    "city": "Самара",
+    "phone": "+7 (927) 723-48-35",
+    "height": 181,
+    "weight": 72,
+    "bmi": 22.0,
+    "blood_type": "II+"
+  },
+
+  {
+    "city": "Новосибирск",
+    "phone": "+7 (914) 597-14-97",
+    "height": 175,
+    "weight": 68,
+    "bmi": 22.2,
+    "blood_type": "I+"
+  },
+
+  {
+    "city": "Екатеринбург",
+    "phone": "+7 (917) 307-03-00",
+    "height": 172,
+    "weight": 65,
+    "bmi": 22.0,
+    "blood_type": "II+"
+  },
+
+  {
+    "city": "Краснодар",
+    "phone": "+7 (925) 712-07-03",
+    "height": 167,
+    "weight": 59,
+    "bmi": 21.2,
+    "blood_type": "III-"
+  },
+
+  {
+    "city": "Москва",
+    "phone": "+7 (916) 519-05-81",
+    "height": 165,
+    "weight": 70,
+    "bmi": 25.7,
+    "blood_type": "IV+"
+  }
+]

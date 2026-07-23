@@ -1,0 +1,89 @@
+.tests {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  padding: 30px 20px 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.testsLoader,
+.testsEmpty {
+  flex: 1;
+}
+
+.tests_header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: flex-start;
+  width: 90%;
+}
+
+.tests_filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.testBtn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  height: 40px;
+  white-space: nowrap;
+}
+
+.addIcon {
+  font-size: 24px;
+}
+
+.tests_title {
+  font-size: 28px;
+  margin: 0 auto;
+}
+
+.tests_list {
+  margin-top: 40px;
+  width: 90%;
+  row-gap: 35px;
+}
+
+.sortSection {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.sortLabel {
+  color: #3f8cf4;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.selectContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.testsSearch {
+  width: 210px;
+  font-size: 18px;
+}
+
+.filterSection {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.calendar {
+  width: 350px;
+  align-self: stretch;
+}

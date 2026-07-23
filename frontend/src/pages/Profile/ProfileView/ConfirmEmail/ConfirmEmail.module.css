@@ -1,0 +1,15 @@
+.confirmIcon {
+  color: #3f8cf4;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.confirmIcon:hover {
+  transform: scale(1.2);
+}
+
+.confirmLink {
+  color: #2d62be;
+  font-weight: 400;
+}

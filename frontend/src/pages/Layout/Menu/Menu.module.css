@@ -1,0 +1,123 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow-y: scroll;
+  scrollbar-color: rgba(107, 146, 229, 0.4) #e5eaf5;
+  scrollbar-width: thin;
+}
+
+.user_avatar {
+  position: relative;
+  padding: 5px 5px 0px 0px;
+}
+
+.menu_photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.iconWrapper {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.iconWrapper:hover {
+  border: 1px solid var(--primary-dark);
+}
+
+.menu_icon {
+  color: var(--primary);
+  transition: color 0.2s ease-out;
+}
+
+.iconWrapper:hover .menu_icon {
+  color: var(--primary-dark);
+}
+
+.menu h2 {
+  font-size: 22px;
+  margin: 10px 20px 30px 20px;
+  line-height: 1.5;
+}
+
+.menu_links {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  flex: 1;
+  justify-content: space-between;
+  row-gap: 25px;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.navLinks li {
+  align-self: stretch;
+}
+.navLinks a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding: 15px 0px 15px 60px;
+  background: transparent;
+}
+
+.navLinks a .nav_icon {
+  color: var(--primary-dark);
+}
+
+.navLinks a:hover {
+  background: #f5f9ff;
+}
+
+.navLinks a.active {
+  background: #e8f3fe;
+  color: var(--primary-dark);
+}
+
+.navLinks a.active:hover {
+  background: #f5f9ff;
+}
+
+.wrapperLoader {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    scrollbar-width: none;
+  }
+}

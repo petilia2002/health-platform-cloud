@@ -1,0 +1,180 @@
+.adminProfile {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.profileContainer {
+  display: flex;
+  gap: 5px;
+  padding: 40px 13px 40px 50px;
+  flex: 1;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.profileContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex: 1;
+}
+
+.editIcon {
+  color: #3f8cf4;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.editIcon:hover {
+  cursor: pointer;
+  color: #397ee2;
+}
+
+.profileCard {
+  max-width: 680px;
+  align-self: flex-start;
+  margin-bottom: 40px;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cardContent {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.photoLink {
+  display: inline-block;
+  line-height: 0;
+  width: fit-content;
+}
+
+.photo {
+  width: 160px;
+  height: 160px;
+  object-position: top;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  object-position: top;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.userName h2 {
+  margin-bottom: 0;
+}
+
+.userName p {
+  margin-top: 5px;
+  color: #f2813f;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.userData {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 40px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+}
+
+.email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.statusBlocks {
+  width: 80%;
+  font-size: 16px;
+  font-weight: 400;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 35px 100px;
+}
+
+.statusCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background: #e8f3fe;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.statusIcon {
+  color: #3f8cf4;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.statusIcon:hover {
+  transform: scale(1.2);
+}
+
+.sectionTitle {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.sectionWrapper {
+  padding-left: 50px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px 100px;
+  flex-wrap: wrap;
+}
+
+.labelField {
+  color: #999999;
+}
+
+@media (max-width: 1000px) {
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .userData {
+    display: flex;
+    justify-content: center;
+  }
+}

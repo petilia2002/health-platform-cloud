@@ -1,0 +1,25 @@
+.loginCheckbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #3f8cf4;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.5s, background-color 0.5s;
+}
+
+.loginCheckbox:checked {
+  border-color: #3f8cf4;
+  background-color: #3f8cf4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 18c-.3 0-.5-.1-.7-.3l-5-5c-.4-.4-.4-1 0-1.4s1-.4 1.4 0L9 15.6 19.3 5.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-11 11c-.2.2-.4.3-.7.3z' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.loginCheckbox:focus {
+  border-color: #397ee2;
+  box-shadow: 0 0 0 3px rgba(29, 161, 242, 0.3);
+}

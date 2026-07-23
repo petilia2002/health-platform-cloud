@@ -1,0 +1,35 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main_content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 40px;
+}
+
+.header {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  flex: 0 0 87px;
+}
+
+.footer {
+  flex: 0 0 70px;
+  padding: 0;
+  align-self: stretch;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+}
