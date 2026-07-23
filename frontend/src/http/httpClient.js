@@ -4,10 +4,8 @@ import AuthError from "../exceptions/AuthError";
 import { store } from "../store/index";
 import { logout } from "../store/authSlice";
 
-// export const AUTH_URL = "https://backend-petrenckovilya.amvera.io/auth";
-// export const API_URL = "https://backend-petrenckovilya.amvera.io/api";
-export const AUTH_URL = "http://localhost:5000/auth";
-export const API_URL = "http://localhost:5000/api";
+export const AUTH_URL = "https://backend-petrenckovilya.amvera.io/auth";
+export const API_URL = "https://backend-petrenckovilya.amvera.io/api";
 
 export const httpClient = axios.create({
   baseURL: AUTH_URL,
